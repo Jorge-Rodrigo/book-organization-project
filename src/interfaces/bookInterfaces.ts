@@ -15,4 +15,5 @@ export interface iBook {
   description: string;
   year: number;
   genre: string;
+  imgCover: string;
 }
