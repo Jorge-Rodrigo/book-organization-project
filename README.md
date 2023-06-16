@@ -1,1 +1,0 @@
-# book-organization-project
