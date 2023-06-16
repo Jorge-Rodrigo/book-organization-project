@@ -1,14 +1,10 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { BookProvider } from "./context/bookContext";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
+    <BookProvider>
       <h1>Book Organization</h1>
-    </>
+    </BookProvider>
   );
 }
 
