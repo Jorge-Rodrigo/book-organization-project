@@ -1,5 +1,8 @@
+import { NavigateFunction } from "react-router-dom";
+
 export interface iBookContext {
   bookList: iBook[] | null;
+  navigate: NavigateFunction;
 }
 
 export interface iBookContextProps {

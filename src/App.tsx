@@ -1,9 +1,10 @@
 import { BookProvider } from "./context/bookContext";
+import RoutesMain from "./pages/routes";
 
 function App() {
   return (
     <BookProvider>
-      <h1>Book Organization</h1>
+      <RoutesMain />
     </BookProvider>
   );
 }
