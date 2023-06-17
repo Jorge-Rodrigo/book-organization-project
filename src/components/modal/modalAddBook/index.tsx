@@ -1,8 +1,5 @@
 import { SubmitHandler, useForm } from "react-hook-form";
-
 import { zodResolver } from "@hookform/resolvers/zod";
-// import { tContactRequest } from "../../../interfaces/contactsInterface";
-// import { contactSchema } from "../../../schemas/contactSchema";
 import Input from "../../input";
 import { ModalMain } from "./style";
 import { useContext } from "react";

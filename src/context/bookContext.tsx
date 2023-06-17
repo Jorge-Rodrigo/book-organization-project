@@ -4,7 +4,6 @@ import {
   iBookContext,
   iBookContextProps,
 } from "../interfaces/bookInterfaces";
-import { useNavigate } from "react-router-dom";
 import allBooks from "../booksData";
 
 export const BookContext = createContext({} as iBookContext);
@@ -12,7 +11,6 @@ export const BookContext = createContext({} as iBookContext);
 export const BookProvider = ({ children }: iBookContextProps) => {
   const [bookList, setBookList] = useState<iBook[] | null>(null);
   const [modalOn, setModalOn] = useState(false);
-  const navigate = useNavigate();
 
   useEffect(() => {
     if (bookList === null) {
@@ -32,7 +30,7 @@ export const BookProvider = ({ children }: iBookContextProps) => {
 
   return (
     <BookContext.Provider
-      value={{ bookList, navigate, setModalOn, modalOn, addBook, removeBook }}
+      value={{ bookList, setModalOn, modalOn, addBook, removeBook }}
     >
       {children}
     </BookContext.Provider>
