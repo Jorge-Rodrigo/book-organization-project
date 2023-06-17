@@ -24,10 +24,15 @@ export const BookProvider = ({ children }: iBookContextProps) => {
     setBookList([...bookList!, data]);
     setModalOn(false);
   };
+  const removeBook = (title: string) => {
+    const filterBook = bookList?.filter((book) => book.title !== title);
+    setBookList(filterBook!);
+    setModalOn(false);
+  };
 
   return (
     <BookContext.Provider
-      value={{ bookList, navigate, setModalOn, modalOn, addBook }}
+      value={{ bookList, navigate, setModalOn, modalOn, addBook, removeBook }}
     >
       {children}
     </BookContext.Provider>

@@ -51,4 +51,19 @@ export const ModalMain = styled.div`
       }
     }
   }
+  .removeBook {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      text-align: center;
+      margin: 25px 15px;
+      font-weight: 600;
+      color: var(--color-main2);
+    }
+    button {
+      width: 60%;
+    }
+  }
 `;

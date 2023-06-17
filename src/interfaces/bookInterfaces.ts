@@ -6,6 +6,7 @@ export interface iBookContext {
   modalOn: boolean;
   setModalOn: React.Dispatch<React.SetStateAction<boolean>>;
   addBook: (data: iBook) => void;
+  removeBook: (title: string) => void;
 }
 
 export interface iBookContextProps {

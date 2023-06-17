@@ -21,7 +21,7 @@ export const HomePage = () => {
   };
   return (
     <>
-      {modalOn && <Modal setOff={setModalOn} style={style} />}
+      {modalOn && <Modal setOff={setModalOn} style={style} book={book} />}
       <Container>
         <div className="containerBooks">
           <MainDiv>
@@ -39,7 +39,10 @@ export const HomePage = () => {
               </Button>
             </div>
             <ul className="bookList">
-              {bookList && bookList.map((book) => <BookCard book={book} />)}
+              {bookList &&
+                bookList.map((book) => (
+                  <BookCard book={book} active={activeModal} />
+                ))}
             </ul>
           </MainDiv>
         </div>

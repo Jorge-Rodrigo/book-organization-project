@@ -13,12 +13,17 @@ export interface iButtonStyledProps {
 
 export interface iBookCardProps {
   book: iBook;
+  active: (style: string, book?: iBook) => void;
 }
 
 export interface iModalProps {
   setOff: React.Dispatch<React.SetStateAction<boolean>>;
   style: string;
-  // infoModal?: tContactReponse | tUserReponse | null;
+  book?: iBook | null;
+}
+
+export interface iModalBookDetailProps {
+  book: iBook | null | undefined;
 }
 
 export interface iFormProps {
