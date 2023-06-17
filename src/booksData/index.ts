@@ -4,7 +4,7 @@ import coverEnsaio from "../assets/booksCover/ensaio.png";
 import coverMemorias from "../assets/booksCover/memorias.jpg";
 import coverMobyDick from "../assets/booksCover/moby-dick.png";
 
-const bookList: iBook[] = [
+const allBooks: iBook[] = [
   {
     title: "Dom Quixote",
     author: "Miguel de Cervantes",
@@ -20,7 +20,7 @@ const bookList: iBook[] = [
     description:
       "Este é um livro francamente terrível com o qual eu quero que o leitor sofra tanto como eu sofri ao escrevê-lo. Nele se descreve uma longa tortura. É um livro brutal e violento e é simultaneamente uma das experiências mais dolorosas da minha vida. São 300 páginas de constante aflição. Através da escrita, tentei dizer que não somos bons e que é preciso que tenhamos coragem para reconhecer isso.",
     year: 1995,
-    genre: "romance",
+    genre: "Romance",
     imgCover: coverEnsaio,
   },
   {
@@ -43,4 +43,4 @@ const bookList: iBook[] = [
   },
 ];
 
-export default bookList;
+export default allBooks;

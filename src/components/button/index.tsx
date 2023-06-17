@@ -1,9 +1,15 @@
 import { iButtonProps } from "../../interfaces/componentsInterfaces";
+import { ButtonStyled } from "./style";
 
-export const Button = ({ children, type, onClick }: iButtonProps) => {
+export const Button = ({
+  children,
+  type,
+  onClick,
+  buttonVar,
+}: iButtonProps) => {
   return (
-    <button type={type} onClick={onClick}>
+    <ButtonStyled buttonVariation={buttonVar} type={type} onClick={onClick}>
       {children}
-    </button>
+    </ButtonStyled>
   );
 };

@@ -17,13 +17,11 @@ export const GlobalStyle = createGlobalStyle`
         cursor: pointer;
     }
     :root{
-        --color-blue: #1d3557;
-        --color-blue2:#14ffd9;
-        --color-blue3:#192c56;
-        --color-blue4:#8fb4be;
-        --color-red:#fe0000;
-        --color-red2:#800000;
-        --color-purple:#7d6cbd;
-        --color-white:#ffffff;
+        --color-bg: #ffe6b3;
+        --color-bg2:#ffeecc;
+        --color-bg3:#ffc34d;
+        --color-main:#cc0000;
+        --color-main2:#b30000;
+        --color-black: #000000;
     }
 `;
