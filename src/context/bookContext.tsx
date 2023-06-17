@@ -11,16 +11,24 @@ export const BookContext = createContext({} as iBookContext);
 
 export const BookProvider = ({ children }: iBookContextProps) => {
   const [bookList, setBookList] = useState<iBook[] | null>(null);
+  const [modalOn, setModalOn] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (allBooks.length > 0) {
+    if (bookList === null) {
       setBookList(allBooks);
     }
   }, [bookList]);
 
+  const addBook = (data: iBook) => {
+    setBookList([...bookList!, data]);
+    setModalOn(false);
+  };
+
   return (
-    <BookContext.Provider value={{ bookList, navigate }}>
+    <BookContext.Provider
+      value={{ bookList, navigate, setModalOn, modalOn, addBook }}
+    >
       {children}
     </BookContext.Provider>
   );

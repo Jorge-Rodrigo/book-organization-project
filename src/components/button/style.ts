@@ -30,7 +30,7 @@ export const ButtonStyled = styled.button<iButtonStyledProps>`
         `;
       case "cardDetail":
         return css`
-          width: 90px;
+          width: 80%;
           height: 45px;
           background-color: var(--color-bg3);
           border: 3px solid var(--color-main2);
@@ -42,7 +42,7 @@ export const ButtonStyled = styled.button<iButtonStyledProps>`
         `;
       case "cardRemove":
         return css`
-          width: 80px;
+          width: 80%;
           height: 45px;
           background-color: var(--color-main2);
           border: 3px solid var(--color-bg3);

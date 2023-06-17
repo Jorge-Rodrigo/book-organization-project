@@ -9,9 +9,13 @@ export const CardStyled = styled.li`
   min-width: 50%;
   height: 100%;
   gap: 10px;
+  border: 4px solid var(--color-main2);
+  padding: 8px;
+  border-radius: 8px;
   img {
     width: 100%;
     height: 60%;
+    margin: 0 auto;
   }
   h2 {
     font-size: 18px;
@@ -35,6 +39,7 @@ export const CardStyled = styled.li`
     border-radius: 8px;
   }
   .btnDiv {
+    width: 100%;
     display: flex;
     gap: 5px;
   }

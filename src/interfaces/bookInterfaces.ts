@@ -3,6 +3,9 @@ import { NavigateFunction } from "react-router-dom";
 export interface iBookContext {
   bookList: iBook[] | null;
   navigate: NavigateFunction;
+  modalOn: boolean;
+  setModalOn: React.Dispatch<React.SetStateAction<boolean>>;
+  addBook: (data: iBook) => void;
 }
 
 export interface iBookContextProps {
@@ -13,7 +16,7 @@ export interface iBook {
   title: string;
   author: string;
   description: string;
-  year: number;
+  year: string;
   genre: string;
   imgCover: string;
 }
